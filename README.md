@@ -1,4 +1,4 @@
-# DeepL API with Netlify Functions
+# Lingo Nest! 
 
 ## Getting started
 

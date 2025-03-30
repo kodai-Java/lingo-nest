@@ -1,7 +1,7 @@
 import { Button, TextField } from "@mui/material";
 import { FC, useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
-import {getHello, translateEnToJa} from "@/app/kodai/actions";
+import {translateEnToJa} from "@/app/kodai/actions";
 
 type WordInputs = {
     word: string;
@@ -25,11 +25,11 @@ export const Word:FC = () => {
     /**
      * hello world with netlify
      */
-    const onClickHello = async () => {
-        console.log('on click hello 来た')
-        const result = await getHello();
-        setWord(JSON.stringify(result))
-    }
+    // const onClickHello = async () => {
+    //     console.log('on click hello 来た')
+    //     const result = await getHello();
+    //     setWord(JSON.stringify(result))
+    // }
     return <div>
         <div>テキストボックスに英語を入力してください</div>
         <div>textボタンを押すと翻訳結果が出てきます</div>
