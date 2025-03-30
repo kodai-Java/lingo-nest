@@ -1,4 +1,4 @@
-# Netlify Functions Server for DeepL api
+# DeepL API with Netlify Functions
 
 ## Getting started
 
