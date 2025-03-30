@@ -9,7 +9,8 @@
 
 - Local development home: http://localhost:8888
 - Local development function: http://localhost:8888/.netlify/functions/hello
-- Production: https://lingo-nest.netlify.app/.netlify/functions/hello
+- Production: https://lingo-nest.netlify.app
+- Production function: https://lingo-nest.netlify.app/.netlify/functions/hello
 
 ## Deploy to Netlify
 
