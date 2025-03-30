@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@netlify/functions": "^3.0.4",
+    "bun": "^1.2.7"
+  }
+}
