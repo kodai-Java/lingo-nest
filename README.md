@@ -2,8 +2,8 @@
 
 ## Getting started
 
-Install the Netlify CLI: `npm install -g netlify-cli`
-Run the dev server: `netlify dev`
+- Install the Netlify CLI: `npm install -g netlify-cli`
+- Run the dev server: `netlify dev`
 
 ### To use this function:
 
