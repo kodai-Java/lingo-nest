@@ -12,7 +12,6 @@ export const translateEnToJa = async (word: string) => {
           return res.json()
       })
       return resultText
-
 }
 
 export const getHello = async () => {

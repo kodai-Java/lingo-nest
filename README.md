@@ -5,9 +5,10 @@
 - Install the Netlify CLI: `npm install -g netlify-cli`
 - Run the dev server: `netlify dev`
 
-### To use this function:
+### To use this page & function:
 
-- Local development: http://localhost:8888/.netlify/functions/hello
+- Local development home: http://localhost:8888
+- Local development function: http://localhost:8888/.netlify/functions/hello
 - Production: https://your-site.netlify.app/.netlify/functions/hello
 
 ## Learn more
