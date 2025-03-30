@@ -11,6 +11,11 @@
 - Local development function: http://localhost:8888/.netlify/functions/hello
 - Production: https://lingo-nest.netlify.app/.netlify/functions/hello
 
+## Deploy to Netlify
+
+- Run build command: `bun run build`
+- Run deploy command: `netlify deploy --dir=out --prod`
+
 ## Learn more
 
 Here are the official documentation links for Netlify Functions:

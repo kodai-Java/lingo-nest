@@ -1,10 +1,10 @@
 // 'use server'
 export const translateEnToJa = async (word: string) => {
   // どうやってnetlifyのprodのURLに変更しようか
-  const netlifyUrlLocal = `http://localhost:8888/.netlify/functions/translate?text=${word}`
-  const netlifyUrlProd = `https://###.netlify.app/.netlify/functions/translate?text=${word}`
+//   const netlifyUrlLocal = `http://localhost:8888/.netlify/functions/translate?text=${word}`
+  const netlifyUrlProd = `https://lingo-nest.netlify.app/.netlify/functions/translate?text=${word}`
      const resultText: string = await fetch(
-         netlifyUrlLocal,
+         netlifyUrlProd,
           {
               method: 'GET',
           }
