@@ -1,12 +1,9 @@
-import { Dispatch, SetStateAction, useCallback, useState } from "react"
+import { useCallback, useState } from "react"
 
 type EnAndJaWord = {
     index: number
     englishWord: string
     japaneseWord: string
-}
-type Props = {
-setEnAndJaWordRows: Dispatch<SetStateAction<EnAndJaWord[] | undefined>>
 }
 export const useEnglishJapaneseWordTable = () => {
   const [enAndJaWordRows, setEnAndJaWordRows] = useState<EnAndJaWord[]>()
