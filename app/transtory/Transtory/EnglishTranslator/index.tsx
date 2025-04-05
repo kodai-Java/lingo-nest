@@ -3,9 +3,6 @@ import { useForm } from "react-hook-form";
 import { Button, TextField } from "@mui/material";
 import { useEnglishTranslator } from "./hooks";
 
-export type EnglishWord = {
-    englishWord: string;
-}
 export const EnglishTranslator: FC = () => {
   const {
         register,

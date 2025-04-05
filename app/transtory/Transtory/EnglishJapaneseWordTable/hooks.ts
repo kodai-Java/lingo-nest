@@ -1,10 +1,5 @@
 import { useCallback, useState } from "react"
 
-type EnAndJaWord = {
-    index: number
-    englishWord: string
-    japaneseWord: string
-}
 export const useEnglishJapaneseWordTable = () => {
   const [enAndJaWordRows, setEnAndJaWordRows] = useState<EnAndJaWord[]>()
   const showEnglishJapaneseWordTable = useCallback(() => {

@@ -1,5 +1,4 @@
 import { SubmitHandler } from "react-hook-form";
-import { EnglishWord } from ".";
 import { sendEnglishWord } from "../../actions";
 import { useState } from "react";
 
