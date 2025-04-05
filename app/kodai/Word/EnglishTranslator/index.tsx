@@ -1,4 +1,4 @@
-import { FC, useState } from "react"
+import { FC } from "react"
 import { useForm } from "react-hook-form";
 import { Button, TextField } from "@mui/material";
 import { useEnglishTranslator } from "./hooks";
@@ -7,12 +7,11 @@ export type EnglishWord = {
     englishWord: string;
 }
 export const EnglishTranslator: FC = () => {
-    const [englishWord, setEnglishWord] = useState<string>()
-    const {
+  const {
         register,
         handleSubmit,
-    } = useForm<EnglishWord>()
-    const {onSubmitEnglish} = useEnglishTranslator({setEnglishWord});
+   } = useForm<EnglishWord>()
+  const {englishWord, onSubmitEnglish} = useEnglishTranslator();
   return <div>
         <div>テキストボックスに英語を入力してください</div>
         <div>textボタンを押すと翻訳結果が出てきます</div>
