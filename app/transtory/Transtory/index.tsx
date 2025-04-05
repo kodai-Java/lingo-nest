@@ -5,10 +5,10 @@ import { EnglishTranslator } from "./EnglishTranslator";
 /**
  * 入力された文字をローカルストレージに保存する
  * */
-export const Word: FC = () => {
+export const Transtory: FC = () => {
     return <div>
         <EnglishTranslator />
         <EnglishJapaneseWordTable />
     </div>
 }
-export default Word;
+export default Transtory;
