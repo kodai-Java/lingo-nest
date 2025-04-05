@@ -11,7 +11,7 @@ export const useEnglishJapaneseWordTable = () => {
         setEnAndJaWordRows(
              Object.keys(localStorage).map((key, index) => {
                 return {
-                    index,
+                    index: index + 1,
                     englishWord: key,
                     japaneseWord: localStorage.getItem(key)
                 } as EnAndJaWord
