@@ -1,7 +1,7 @@
-"use client";
+'use client'
 
-import Transtory from "@/app/transtory/Transtory";
+import Transtory from '@/app/transtory/Transtory'
 
 export default function Page() {
-    return (<Transtory/>)
+  return <Transtory />
 }

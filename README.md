@@ -1,4 +1,4 @@
-# Lingo Nest! 
+# Lingo Nest!
 
 ## Getting started
 

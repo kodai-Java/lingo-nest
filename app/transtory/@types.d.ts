@@ -1,8 +1,8 @@
 type EnglishWord = {
-    englishWord: string;
+  englishWord: string
 }
 type EnAndJaWord = {
-    index: number
-    englishWord: string
-    japaneseWord: string
+  index: number
+  englishWord: string
+  japaneseWord: string
 }
