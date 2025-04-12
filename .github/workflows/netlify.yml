@@ -5,10 +5,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-22.04
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
-
-      # ( Build to ./dist or other directory... )
       - uses: oven-sh/setup-bun@v2
       - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         run: |
@@ -30,4 +29,3 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           DEEPL_AUTH_KEY: ${{ secrets.DEEPL_AUTH_KEY }}
-        timeout-minutes: 10
