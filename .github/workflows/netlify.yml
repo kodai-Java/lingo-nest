@@ -13,10 +13,6 @@ jobs:
         run: |
           bun i
           bun run build
-      - name: 🔍 Check output after build
-        run: |
-          ls -la
-          ls -la netlify/functions || echo "functions directory missing!"
 
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v3.0
@@ -28,6 +24,7 @@ jobs:
           enable-pull-request-comment: false
           enable-commit-comment: true
           overwrites-pull-request-comment: true
+          functions-dir: netlify/functions
           netlify-config-path: ./netlify.toml
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
