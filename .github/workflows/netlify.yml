@@ -15,7 +15,7 @@ jobs:
           bun i
           bun add -g netlify-cli
           netlify build
-          netlify deploy --prod --dir=.netlify --site=$NETLIFY_SITE_ID --auth=$NETLIFY_AUTH_TOKEN
+          netlify deploy --prod --dir=.netlify/static --site=$NETLIFY_SITE_ID --auth=$NETLIFY_AUTH_TOKEN
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
