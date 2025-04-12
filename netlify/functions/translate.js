@@ -1,3 +1,5 @@
+const { env } = require("process")
+
 //todo tsにする
 exports.handler = async function(event, context) {
   console.log('transrate functionきた')
@@ -9,7 +11,7 @@ exports.handler = async function(event, context) {
             {
                 method: 'POST',
                 headers: {
-                    Authorization: 'DeepL-Auth-Key 秘密の変数にする',
+                    Authorization: `DeepL-Auth-Key ${env.DEEPL_AUTH_KEY}`,
                     ContentType: 'application/json'
                 },
             }
