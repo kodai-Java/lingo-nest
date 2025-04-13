@@ -25,15 +25,15 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body
-        className={`min-h-screen bg-white text-white ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`min-h-screen bg-white text-white ${geistSans.variable} ${geistMono.variable} antialiased flex flex-col items-center`}
       >
-        <header className="flex justify-between items-center p-5 bg-opacity-20 backdrop-blur-md">
+        <header className="flex justify-between items-center p-5 bg-opacity-20 backdrop-blur-md w-6xl">
           <div className="logo text-2xl font-bold text-blue-600">LingoNest</div>
           <nav>
             <ul className="flex space-x-6">
               <li>
                 <a
-                  href="#"
+                  href="/"
                   className="text-blue-600 font-medium transition-colors duration-300 hover:text-blue-300"
                 >
                   Home
@@ -47,30 +47,30 @@ export default function RootLayout({
                   Features
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   href="#"
                   className="text-blue-600 font-medium transition-colors duration-300 hover:text-blue-300"
                 >
                   Pricing
                 </a>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a
                   href="#"
                   className="text-blue-600 font-medium transition-colors duration-300 hover:text-blue-300"
                 >
                   Contact
                 </a>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a
                   href="#"
                   className="text-blue-600 font-medium transition-colors duration-300 hover:text-blue-300"
                 >
                   Login
                 </a>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </header>

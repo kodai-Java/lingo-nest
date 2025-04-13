@@ -8,7 +8,7 @@ import { EnglishHistory } from './EnglishHistory'
  * */
 export const Transtory: FC = () => {
   return (
-    <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-2 gap-8">
+    <div className="w-5xl py-10 grid grid-cols-2 gap-8">
       <EnglishTranslator />
       <EnglishHistory />
     </div>
