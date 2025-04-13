@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body
-        className={`min-h-screen bg-gray-900 text-white ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`min-h-screen bg-white text-white ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <header className="flex justify-between items-center p-5 bg-opacity-20 backdrop-blur-md">
           <div className="logo text-2xl font-bold text-blue-600">LingoNest</div>
@@ -34,7 +34,7 @@ export default function RootLayout({
               <li>
                 <a
                   href="#"
-                  className="text-white font-medium transition-colors duration-300 hover:text-blue-300"
+                  className="text-blue-600 font-medium transition-colors duration-300 hover:text-blue-300"
                 >
                   Home
                 </a>
@@ -42,7 +42,7 @@ export default function RootLayout({
               <li>
                 <a
                   href="#"
-                  className="text-white font-medium transition-colors duration-300 hover:text-blue-300"
+                  className="text-blue-600 font-medium transition-colors duration-300 hover:text-blue-300"
                 >
                   Features
                 </a>
@@ -50,7 +50,7 @@ export default function RootLayout({
               <li>
                 <a
                   href="#"
-                  className="text-white font-medium transition-colors duration-300 hover:text-blue-300"
+                  className="text-blue-600 font-medium transition-colors duration-300 hover:text-blue-300"
                 >
                   Pricing
                 </a>
@@ -58,7 +58,7 @@ export default function RootLayout({
               <li>
                 <a
                   href="#"
-                  className="text-white font-medium transition-colors duration-300 hover:text-blue-300"
+                  className="text-blue-600 font-medium transition-colors duration-300 hover:text-blue-300"
                 >
                   Contact
                 </a>
@@ -66,7 +66,7 @@ export default function RootLayout({
               <li>
                 <a
                   href="#"
-                  className="text-white font-medium transition-colors duration-300 hover:text-blue-300"
+                  className="text-blue-600 font-medium transition-colors duration-300 hover:text-blue-300"
                 >
                   Login
                 </a>
