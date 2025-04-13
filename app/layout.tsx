@@ -41,10 +41,10 @@ export default function RootLayout({
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/transtory"
                   className="text-blue-600 font-medium transition-colors duration-300 hover:text-blue-300"
                 >
-                  Features
+                  Transtory
                 </a>
               </li>
               {/* <li>
