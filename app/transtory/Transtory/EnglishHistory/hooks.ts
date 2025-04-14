@@ -1,8 +1,8 @@
-import { useCallback, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 
 export const useEnglishJapaneseWordTable = () => {
   const [enAndJaWordRows, setEnAndJaWordRows] = useState<EnAndJaWord[]>()
-  const showEnglishJapaneseWordTable = useCallback(() => {
+  useEffect(()=>{
     setEnAndJaWordRows(
       Object.keys(localStorage).map((key, index) => {
         return {
@@ -12,6 +12,6 @@ export const useEnglishJapaneseWordTable = () => {
         } as EnAndJaWord
       })
     )
-  }, [])
-  return { enAndJaWordRows, showEnglishJapaneseWordTable }
+  },[])
+  return { enAndJaWordRows }
 }
