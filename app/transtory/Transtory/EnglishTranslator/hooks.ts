@@ -1,13 +1,13 @@
 import { SubmitHandler } from 'react-hook-form'
 import { sendEnglishWord } from '../../actions'
-import { useState } from 'react'
+import { useJapaneseWordStore } from '../../store'
 
 export const useEnglishTranslator = () => {
-  const [englishWord, setEnglishWord] = useState<string>()
+  const { japaneseWord, updateJapaneseWord } = useJapaneseWordStore((state) => state)
   const onSubmitEnglish: SubmitHandler<EnglishWord> = async (data) => {
     const resultText = await sendEnglishWord(data.englishWord)
-    setEnglishWord(resultText)
+    updateJapaneseWord(resultText)
     localStorage.setItem(data.englishWord, resultText)
   }
-  return { englishWord, onSubmitEnglish }
+  return { japaneseWord, onSubmitEnglish }
 }
