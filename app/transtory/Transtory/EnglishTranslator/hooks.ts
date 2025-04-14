@@ -1,6 +1,6 @@
 import { SubmitHandler } from 'react-hook-form'
 import { sendEnglishWord } from '../../actions'
-import { useJapaneseWordStore } from '../../store'
+import { useJapaneseWordStore } from '../../stores'
 
 export const useEnglishTranslator = () => {
   const { japaneseWord, updateJapaneseWord } = useJapaneseWordStore((state) => state)

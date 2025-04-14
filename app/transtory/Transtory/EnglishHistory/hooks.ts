@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useJapaneseWordStore } from '../../store'
+import { useJapaneseWordStore } from '../../stores'
 
 export const useEnglishJapaneseWordTable = () => {
   const [enAndJaWordRows, setEnAndJaWordRows] = useState<EnAndJaWord[]>()
