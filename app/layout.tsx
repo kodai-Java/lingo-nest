@@ -25,9 +25,9 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body
-        className={`min-h-screen bg-white text-white ${geistSans.variable} ${geistMono.variable} antialiased flex flex-col items-center`}
+        className={`min-h-screen bg-white text-white ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="flex justify-between items-center p-5 bg-opacity-20 backdrop-blur-md w-6xl">
+        <header className="flex justify-between items-center p-5 bg-opacity-20 backdrop-blur-md mx-auto max-w-6xl">
           <div className="logo text-2xl font-bold text-blue-600">LingoNest</div>
           <nav>
             <ul className="flex space-x-6">
