@@ -49,14 +49,14 @@ export default function RootLayout({
                   Transtory
                 </a>
               </li>
-              {/* <li>
+              <li>
                 <a
-                  href="#"
+                  href="/lincard"
                   className="text-blue-600 font-medium transition-colors duration-300 hover:text-blue-300"
                 >
-                  Pricing
+                  Lincard
                 </a>
-              </li> */}
+              </li>
               {/* <li>
                 <a
                   href="#"
