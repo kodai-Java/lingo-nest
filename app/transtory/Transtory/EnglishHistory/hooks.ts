@@ -4,7 +4,7 @@ import { useJapaneseWordStore } from '../../stores'
 export const useEnglishJapaneseWordTable = () => {
   const [enAndJaWordRows, setEnAndJaWordRows] = useState<EnAndJaWord[]>()
   const { japaneseWord } = useJapaneseWordStore((state) => state)
-  useEffect(()=>{
+  useEffect(() => {
     setEnAndJaWordRows(
       Object.keys(localStorage).map((key, index) => {
         return {
@@ -14,6 +14,6 @@ export const useEnglishJapaneseWordTable = () => {
         } as EnAndJaWord
       })
     )
-  },[japaneseWord])
+  }, [japaneseWord])
   return { enAndJaWordRows }
 }

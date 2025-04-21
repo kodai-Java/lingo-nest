@@ -7,7 +7,7 @@ export const useEnglishTranslator = () => {
   const onSubmitEnglish: SubmitHandler<EnglishWord> = async (data) => {
     //TODO 仮でバリデーション設置 zodに置き換え
     if (!data.englishWord || data.englishWord.length > 150) {
-      return;
+      return
     }
     const resultText = await sendEnglishWord(data.englishWord)
     updateJapaneseWord(resultText)

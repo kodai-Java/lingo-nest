@@ -18,9 +18,16 @@ export const EnglishTranslator: FC = () => {
         {...register('englishWord')}
       />
       <label className="text-sm font-medium mb-1">Japanese</label>
-      <textarea value={japaneseWord} disabled placeholder='翻訳' className="w-full h-40 p-4 bg-gray-100 border border-gray-200 rounded-lg overflow-y-auto resize-none">
-      </textarea>
-      <button type='submit' className="mt-4 self-start px-6 py-2 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-500 transition">
+      <textarea
+        value={japaneseWord}
+        disabled
+        placeholder="翻訳"
+        className="w-full h-40 p-4 bg-gray-100 border border-gray-200 rounded-lg overflow-y-auto resize-none"
+      ></textarea>
+      <button
+        type="submit"
+        className="mt-4 self-start px-6 py-2 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-500 transition"
+      >
         翻訳する
       </button>
     </form>

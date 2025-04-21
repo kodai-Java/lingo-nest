@@ -28,7 +28,9 @@ export default function RootLayout({
         className={`min-h-screen bg-white text-white ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <header className="flex justify-between items-center p-5 bg-opacity-20 backdrop-blur-md mx-auto max-w-6xl">
-          <a href='/' className="logo text-2xl font-bold text-blue-600">LingoNest</a>
+          <a href="/" className="logo text-2xl font-bold text-blue-600">
+            LingoNest
+          </a>
           <nav>
             <ul className="flex space-x-6">
               <li>
