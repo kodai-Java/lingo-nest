@@ -43,7 +43,7 @@ export default function RootLayout({
               </li>
               <li>
                 <a
-                  href="/transtory"
+                  href="/transtory/"
                   className="text-blue-600 font-medium transition-colors duration-300 hover:text-blue-300"
                 >
                   Transtory
@@ -51,7 +51,7 @@ export default function RootLayout({
               </li>
               <li>
                 <a
-                  href="/lincard"
+                  href="/lincard/"
                   className="text-blue-600 font-medium transition-colors duration-300 hover:text-blue-300"
                 >
                   Lincard
