@@ -2,6 +2,7 @@
 
 import React, { useMemo, useState } from 'react'
 import { useEnglishJapaneseWordTable } from '../transtory/Transtory/EnglishHistory/hooks'
+import { FlashcardViewer } from '@/app/lincard/FlashcardViewer'
 
 export default function Page() {
   const { enAndJaWordRows } = useEnglishJapaneseWordTable()
@@ -55,6 +56,8 @@ export default function Page() {
 
   return (
     <>
+      <FlashcardViewer />
+      {/* コンポーネント作成 */}
       <div className="w-full max-w-xl p-8 bg-white rounded-2xl border border-gray-200 shadow-md transition-all duration-300 mx-auto my-10">
         <p className="text-2xl font-semibold text-gray-900 mb-6 text-center">
           {currentCard && !Array.isArray(currentCard) && currentCard.englishWord}
