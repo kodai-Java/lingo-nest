@@ -15,6 +15,7 @@
     "@mui/material": "^7.0.1",
     "@netlify/functions": "^3.0.4",
     "bun": "^1.2.7",
+    "netlify-cli": "^21.0.1",
     "next": "15.2.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
