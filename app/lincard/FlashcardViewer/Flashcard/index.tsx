@@ -6,6 +6,7 @@ import { useEnglishJapaneseWordTable } from '@/app/transtory/Transtory/EnglishHi
  * 表面(英語)と裏面(日本語)を切り替えて表示
  */
 export const Flashcard: React.FC = () => {
+  //TODO Hooks ts作ってコードを減らしたい
   // 英語のフレーズと日本語訳を受け取る
   const { enAndJaWordRows } = useEnglishJapaneseWordTable()
   const [current, setCurrent] = useState(0)
