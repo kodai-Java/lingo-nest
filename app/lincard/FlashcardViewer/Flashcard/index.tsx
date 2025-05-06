@@ -18,7 +18,6 @@ export const Flashcard: React.FC = () => {
    * 答えを表示する
    */
   const showAnswer = () => {
-    setCurrent((prev) => (prev + 1) % (enAndJaWordRows?.length ?? 0))
     setIsAnswerVisible(true)
   }
   /**
@@ -26,6 +25,7 @@ export const Flashcard: React.FC = () => {
    */
   const hideAnswer = () => {
     setIsAnswerVisible(false)
+    setCurrent((prev) => (prev + 1) % (enAndJaWordRows?.length ?? 0))
   }
   return (
     <div className="w-full max-w-xl p-8 bg-white rounded-2xl border border-gray-200 shadow-md transition-all duration-300 mx-auto my-10">
