@@ -1,5 +1,6 @@
 resource "aws_s3_bucket" "lingo_nest_bucket" {
   bucket = "lingo-nest.com"
+  force_destroy = true
 }
 
 resource "aws_s3_bucket_policy" "lingo_nest_bucket_policy" {
