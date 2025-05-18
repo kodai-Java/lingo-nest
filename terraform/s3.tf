@@ -19,7 +19,7 @@ resource "aws_s3_bucket_policy" "lingo_nest_bucket_policy" {
         Resource = "${aws_s3_bucket.lingo_nest_bucket.arn}/*"
         Condition = {
           StringEquals = {
-            "AWS:SourceArn" = "arn:aws:cloudfront::975049915902:distribution/E2T8YE94PF6IZN"
+            "AWS:SourceArn" = "arn:aws:cloudfront::975049915902:distribution/E350ZSZMR9C6NQ"
           }
         }
       }
