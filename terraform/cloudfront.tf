@@ -29,7 +29,7 @@ resource "aws_cloudfront_distribution" "lingo_nest_distribution" {
         cache_policy_id = "658327ea-f89d-4fab-a63d-7e88639e58f6"
         function_association {
             event_type = "viewer-request"
-            function_arn = "arn:aws:cloudfront::975049915902:function/AddIndexHtml"
+            function_arn = "${aws_cloudfront_function.add_index_html.arn}"
         }
     }
     viewer_certificate {
@@ -43,4 +43,24 @@ resource "aws_cloudfront_distribution" "lingo_nest_distribution" {
             restriction_type = "none"
         }
     }
+}
+
+resource "aws_cloudfront_function" "add_index_html" {
+  name    = "AddIndexHtml"
+  runtime = "cloudfront-js-1.0"
+
+  code = <<EOT
+function handler(event) {
+  var request = event.request;
+  var uri = request.uri;
+
+  if (uri.endsWith('/')) {
+    request.uri += 'index.html';
+  } else if (!uri.includes('.') && !uri.endsWith('/')) {
+    request.uri += '/index.html';
+  }
+
+  return request;
+}
+EOT
 }
