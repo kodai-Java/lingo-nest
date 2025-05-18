@@ -20,7 +20,7 @@ resource "aws_cloudfront_distribution" "lingo_nest_distribution" {
     default_cache_behavior {
         allowed_methods = ["GET", "HEAD"]
         target_origin_id = aws_s3_bucket.lingo_nest_bucket.bucket_regional_domain_name
-        viewer_protocol_policy = "redirect-to-https"
+        viewer_protocol_policy = "https-only"
         cached_methods = ["GET", "HEAD"]
         compress = true
         min_ttl = 0
