@@ -57,22 +57,14 @@ export default function RootLayout({
                   Lincard
                 </a>
               </li>
-              {/* <li>
+              <li>
                 <a
-                  href="#"
-                  className="text-blue-600 font-medium transition-colors duration-300 hover:text-blue-300"
-                >
-                  Contact
-                </a>
-              </li> */}
-              {/* <li>
-                <a
-                  href="#"
+                  href="/api/auth/signin"
                   className="text-blue-600 font-medium transition-colors duration-300 hover:text-blue-300"
                 >
                   Login
                 </a>
-              </li> */}
+              </li>
             </ul>
           </nav>
         </header>
