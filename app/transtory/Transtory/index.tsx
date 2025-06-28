@@ -1,5 +1,4 @@
 import { FC } from 'react'
-import { EnglishJapaneseWordTable } from './EnglishJapaneseWordTable'
 import { EnglishTranslator } from './EnglishTranslator'
 import { EnglishHistory } from './EnglishHistory'
 
