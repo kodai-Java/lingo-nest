@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { login } from '../lib/cognito'
+import { login } from '../../lib/cognito'
 
 export default function Page() {
   const [email, setEmail] = useState('')
