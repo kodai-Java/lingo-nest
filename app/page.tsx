@@ -1,4 +1,17 @@
-export default async function Home() {
+'use client'
+import { withAuthenticator } from '@aws-amplify/ui-react'
+import { Amplify } from 'aws-amplify'
+
+Amplify.configure({
+  Auth: {
+    Cognito: {
+      userPoolClientId: '6laemlur20d7qvgi7atjvg19mk',
+      userPoolId: 'ap-northeast-1_NwVaa2JOU',
+    },
+  },
+})
+
+function Home() {
   return (
     <section className="hero flex flex-col items-center text-center py-20 px-5">
       <h1 className="text-5xl font-bold mb-5">Master Vocabulary with LingoNest</h1>
@@ -14,3 +27,6 @@ export default async function Home() {
     </section>
   )
 }
+
+// ログインしてなけれログイン画面に遷移する
+export default withAuthenticator(Home)
