@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 import '@aws-amplify/ui-react/styles.css'
+import { signOut } from 'aws-amplify/auth'
+import { SignoutButton } from './Templetes/Header/Signout'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -59,12 +61,7 @@ export default function RootLayout({
                 </a>
               </li>
               <li>
-                <a
-                  href="/api/auth/signin"
-                  className="text-blue-600 font-medium transition-colors duration-300 hover:text-blue-300"
-                >
-                  Login
-                </a>
+                <SignoutButton />
               </li>
             </ul>
           </nav>
